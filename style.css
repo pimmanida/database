@@ -36,9 +36,10 @@
 
 .head p {
     font-weight: 674;
-    font-size: 24px;
+    font-size: 1.875vw;
     line-height: 29px;
     /* identical to box height */
+    width: 67.5vw;
     text-align: center;
     letter-spacing: 0.1em;
     color: #000000;
