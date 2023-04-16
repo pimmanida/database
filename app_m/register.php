@@ -29,30 +29,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
 
     <div class="container">
         <h1 class="mt-5">Register Page</h1>
-        <hr>
         <form method="post">
             <div class="mb-3">
-                <label for="fullname" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="username" name="fullname">
+                <!-- <label for="fullname" class="form-label">Full Name</label> -->
+                <input type="text" class="form-control" id="username" name="fullname" placeholder="Full Name">
             </div>
             <div class="mb-3">
-                <label for="username" class="form-label">User Name</label>
-                <input type="text" class="form-control" id="username" name="username" onblur="checkusername(this.value)">
+                <!-- <label for="username" class="form-label">User Name</label> -->
+                <input type="text" class="form-control" id="username" name="username" placeholder="Username" onblur="checkusername(this.value)">
                 <span id="usernameavailable"></span>
             </div>
             <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email">
+                <!-- <label for="email" class="form-label">Email</label> -->
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
             </div>
             <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" name="password">
+                <!-- <label for="password" class="form-label">Password</label> -->
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
             </div>
             <button type="submit" name="submit" id="submit" class="btn btn-success">Register</button>
         </form>
