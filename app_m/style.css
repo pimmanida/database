@@ -9,26 +9,40 @@
     text-decoration: none;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    font-size: 1rem;
+}
+
+html {
+    font-size: calc(60% + 0.8vmin);
+    background-image: url(img/bg.jpg);
+}
+
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+    gap: 6.25rem;
+    text-align: center;
+    align-items: center;
 }
 
 .head {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
-    gap: 30px;
-
-    position: absolute;
+    gap: 1.875rem;
     width: 100vw;
-    height: 116px;
-    top: 97px;
-
+    height: 7.25rem;
+    top: 6rem;
 }
 
 .head h1 {
     font-weight: 674;
-    font-size: 3.75vw;
-    line-height: 57px;
+    font-size: 3rem;
+    line-height: 3.6rem;
     text-align: center;
     letter-spacing: 0.5em;
     color: #000000;
@@ -36,48 +50,81 @@
 
 .head p {
     font-weight: 674;
-    font-size: 1.875vw;
-    line-height: 29px;
-    /* identical to box height */
-    width: 67.5vw;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     text-align: center;
     letter-spacing: 0.1em;
     color: #000000;
-}
-
-img {
-    height: 100%;
-    width: 100%;
+    width: 60%;
 }
 
 .log {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
-    gap: 20px;
-    position: absolute;
-    width: 100vw;
-    height: 142.01px;
-    top: 345px;
+    padding: 2.5rem;
+    gap: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    width: fit-content;
+    border-radius: 0.5rem;
 }
 
-.log p {
+.log h1 {
+    font-family: 'Poppins', sans-serif;
     font-weight: 674;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     text-align: center;
     text-transform: uppercase;
-
-    color: #FFFFFF;
 }
 
-.linear {
-    width: 750px;
-    height: 0px;
-    border-radius: 10px;
-    border: 3px solid #FFFFFF;
-    transform: rotate(-0.23deg);
+form {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    
+}
+
+.input input {
+    font-family: 'Poppins', sans-serif;
+    height: 2rem;
+    border-radius: 0.25rem;
+    border-color: transparent;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 1rem;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    border: transparent;
+    background: #F1DEC8;
+    border-radius: 0.5rem;
+    height: 2rem;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #e4c9ab;
+}
+
+form a {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #F1DEC8;
+    transition: all 0.3s;
+}
+
+form a:hover {
+    color: #e4c9ab;
 }
