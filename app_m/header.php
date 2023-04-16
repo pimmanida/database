@@ -9,7 +9,11 @@
             </nav>
         </div>
         <div class="sec2">
-
+            <nav>
+                <a href="#">
+                    <i class="fa-regular fa-cart-shopping"></i>
+                </a>
+            </nav>
         </div>
     </div>
 </header>
@@ -20,6 +24,7 @@
 
     header {
         font-family: 'Poppins', sans-serif;
+        width: 100vw;
     }
 
     .flex {
@@ -27,7 +32,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 18px 40px;
+        padding: 1.125rem 2.5rem;
         position: relative;
     }
 
@@ -36,7 +41,7 @@
         flex-direction: row;
         align-items: center;
         padding: 0px;
-        gap: 40px;
+        gap: 2.5rem;
     }
 
     nav {
@@ -44,14 +49,14 @@
         flex-direction: row;
         align-items: flex-start;
         padding: 0px;
-        gap: 25px;
+        gap: 1.6rem;
     }
 
     nav a {
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
+        font-size: 0.875rem;
+        line-height: 1.313rem;
         color: #784A14;
         text-decoration: none;
     }
