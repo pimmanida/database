@@ -13,6 +13,30 @@
     <div class="container1">
         <h1>SAHARA</h1>
         <hr style="width: 60rem; fiborder: 1px solid #000000;">
+        <form method="post">
+            <div class="container2">
+                <div class="box">
+                    <label for="customer">Customer Name:</label>
+                    <input type="text" name="customer" placeholder="Name" required>
+                </div>
+                <div class="box">
+                    <label for="phone_number">Phone Number:</label>
+                    <input type="tel" name="phone_number" placeholder="Phone Number" required>
+                </div>
+                <div class="box">
+                    <label for="date_of_reservation">Date of reservation:</label>
+                    <input type="date" id="date_of_reservation" name="date_of_reservation" required>
+                    </div>
+                <div class="box">
+                    <label for="time_of_reservation">Time of reservation:</label>
+                    <input type="time" id="time_of_reservation" name="time_of_reservation" required>
+                </div>
+            </div>
+            <div class="container3">
+                <input type="submit" value="Confirm Reservation">
+            </div>
+            
+        </form>
         <?php
         // Include config file
         require_once "config2.php";
@@ -42,30 +66,6 @@
             echo "Error: Table number not specified";
         }
         ?>
-        <form method="post">
-            <div class="container2">
-                <div class="box">
-                    <label for="customer">Customer Name:</label>
-                    <input type="text" name="customer" placeholder="Name" required>
-                </div>
-                <div class="box">
-                    <label for="phone_number">Phone Number:</label>
-                    <input type="tel" name="phone_number" placeholder="Phone Number" required>
-                </div>
-                <div class="box">
-                    <label for="date_of_reservation">Date of reservation:</label>
-                    <input type="date" id="date_of_reservation" name="date_of_reservation" required>
-                    </div>
-                <div class="box">
-                    <label for="time_of_reservation">Time of reservation:</label>
-                    <input type="time" id="time_of_reservation" name="time_of_reservation" required>
-                </div>
-            </div>
-            <div class="container3">
-                <input type="submit" value="Confirm Reservation">
-            </div>
-            
-        </form>
     </div>
     
 </body>

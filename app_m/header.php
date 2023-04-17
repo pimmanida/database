@@ -3,18 +3,18 @@
     session_start();
 
 ?>
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <body>
 
     <div class="container">
-        <?php echo $_SESSION['fname']; ?></h1>
+        </h1>
     </div>
 
 
 </body>
-</html>
+</html> -->
 
 <header class="header">
     <div class="flex">
@@ -29,11 +29,11 @@
         <div class="sec2">
             <nav>
                 <a href="#">
-                    <i class="fas fa-cart-shopping"></i>
+                    <i class="fas fa-cart-shopping" style="align-items: center;"></i>
                 </a>
-                <a href="#">
+                <a href="#" class="profile">
                     <i class="fas fa-user"></i>
-                   
+                    <h1><?php echo $_SESSION['fname']; ?></h1>
                 </a>
             </nav>
         </div>
@@ -47,6 +47,10 @@
     header {
         font-family: 'Poppins', sans-serif;
         width: 100vw;
+    }
+
+    .sec2 i {
+        align-items: center;
     }
 
     .flex {
@@ -74,13 +78,21 @@
         gap: 1.6rem;
     }
 
-    nav a {
+    nav a, h1 {
         font-style: normal;
         font-weight: 400;
         font-size: 0.875rem;
         line-height: 1.313rem;
         color: #784A14;
         text-decoration: none;
+    }
+    .profile {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .profile h1 {
+        vertical-align: middle;
     }
 </style>
 <?php 

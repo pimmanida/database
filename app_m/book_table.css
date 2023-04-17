@@ -24,6 +24,7 @@ html {
     align-items: center;
     padding: 0px;
     gap: 1.5rem;
+    margin-top: 5rem;
 }
 
 .container1 h1 {
@@ -34,6 +35,8 @@ html {
     line-height: 3.5rem;
     text-align: center;
     letter-spacing: 0.5em;
+    color: #000000;
+    
 }
 
 form {
@@ -88,3 +91,23 @@ form .container2 {
     background-color: transparent;
     color: #fff;
 }
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+}
+.container5 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.table button{
+    width: 13rem;
+    padding: 1rem 2rem;
+    background: #fff;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+}
+
