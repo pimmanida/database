@@ -3,18 +3,6 @@
     session_start();
 
 ?>
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<body>
-
-    <div class="container">
-        </h1>
-    </div>
-
-
-</body>
-</html> -->
 
 <header class="header">
     <div class="flex">
@@ -59,7 +47,6 @@
         justify-content: space-between;
         align-items: center;
         padding: 1.125rem 2.5rem;
-        position: relative;
     }
 
     .sec1 {
@@ -73,7 +60,7 @@
     nav {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         padding: 0px;
         gap: 1.6rem;
     }
@@ -84,12 +71,21 @@
         font-size: 0.875rem;
         line-height: 1.313rem;
         color: #784A14;
+        padding: 0.25rem 0.5rem;
         text-decoration: none;
+        transition: all 0.3s;
     }
+
+    nav a:hover {
+        background: rgba(170, 127, 90, 0.25);
+        border-radius: 0.5rem;
+    }
+
     .profile {
         display: flex;
         flex-direction: row;
         gap: 1rem;
+        align-items: center;
     }
     .profile h1 {
         vertical-align: middle;
