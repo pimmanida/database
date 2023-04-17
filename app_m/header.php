@@ -11,7 +11,10 @@
         <div class="sec2">
             <nav>
                 <a href="#">
-                    <i class="fa-regular fa-cart-shopping"></i>
+                    <i class="fas fa-cart-shopping"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-user"></i>
                 </a>
             </nav>
         </div>
