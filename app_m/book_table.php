@@ -51,7 +51,8 @@
                 $date_of_reservation = $_POST["date_of_reservation"];
                 $time = $_POST["time_of_reservation"];
 
-                $sql = "INSERT INTO reservations (customer, table_number, phone_number, date_of_reservation, time_of_reservation) VALUES ('$customer', '$table_number', '$phone_number', '$date_of_reservation', STR_TO_DATE('', '%H:%i:%s'))";
+                $sql = "INSERT INTO reservations (customer, table_number, phone_number, date_of_reservation, time_of_reservation) VALUES ('$customer', '$table_number', '$phone_number', '$date_of_reservation', STR_TO_DATE('$time', '%H:%i'))";
+
 
                 if ($conn->query($sql) === TRUE) {
                     echo "Reservation confirmed successfully";
