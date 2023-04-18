@@ -12,7 +12,7 @@
     <?php include 'header.php'; ?>
 
     
-
+<!--
     <div class="logo">
         <br>
         <b>
@@ -21,7 +21,7 @@
         <hr width="60%" size="6">
         <br>
     </div>
-   
+-->   
 
     <div class="container">
       <div class="sidebar">
@@ -45,8 +45,19 @@
       <div class="small-product-items3">
           <img class="product-img" src="img/3.png" alt="">
       </div>
+  </div> 
+  
       
-      </div>
+
+    <div class="menu">
+      <div class="menu-items">
+      <img class= "menu-img" src="" alt="">
+    </div>
+    
+
+
+
+
     <div class="modal" style="display: none;">
       <div class="modal-bg"></div>
       <div class="modal-page">
