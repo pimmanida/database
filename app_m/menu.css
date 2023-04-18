@@ -13,7 +13,7 @@
   display: none;
 }
 
-.nav-container {
+.container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,36 +24,7 @@
     height: 21px;
     
 }
-.logonav {
-  width: 15vw;
-  object-fit: contain;
-}
-.nav-profile {
-  display: flex;
-  align-items: center;
-}
 
-
-.nav-profile-cart {
-  position: relative;
-  border-radius: 0px;
-
-}
-
-.cartcount {
-  position: relative;
-  top: -10px;
-  right: 7px;
-  width: 15px;
-  height: 15px;
-  background: red;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  
-}
 
 .product {
   width: 80%;

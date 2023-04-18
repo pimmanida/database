@@ -24,7 +24,7 @@
  
 
     <div class="container">
-      <div class="sidebar">
+      <div class="sidebar" >
         <a href="#" class="sidebar-items">SEAFOOD</a>
         <a href="#" class="sidebar-items">MEAT</a>
         <a href="#" class="sidebar-items">FRUIT</a>
@@ -32,10 +32,13 @@
         <a href="#" class="sidebar-items">BAKERY</a>
         <br>
       </div>
+</div>
+
 
       <div class="big-product-items">
+        <a href="#">
           <img class="product-img" src="img/1.png" alt="">
- 
+      </a>
       </div>
 
       <div class="small-product-items2">
@@ -49,27 +52,46 @@
   
       
 
-    <div class="menu">
-      <div class="menu-items">
+  <div class="menu">
+    
+    <div class="menu-items">
+      <a href="#">
         <img class= "menu-img" src="app_m/img/4.png" alt="">
-      </div>
-      <div class="menu-items">
-        <img class= "menu-img" src="img/5.png" alt="">
-      </div>
-      <div class="menu-items">
-        <img class= "menu-img" src="img/6.png" alt="">
-      </div>
-      <div class="menu-items">
-        <img class= "menu-img" src="img/7.png" alt="">
-      </div>
-      <div class="menu-items">
-        <img class= "menu-img" src="img/8.png" alt="">
-      </div>
-      <div class="menu-items">
-        <img class= "menu-img" src="img/9.png" alt="">
-      </div>
-     
+      </a>
     </div>
+    
+    <div class="menu-items">
+      <a href="#">
+        <img class= "menu-img" src="app_m/img/4.png" alt="">
+      </a>
+    </div>
+    <div class="menu-items">
+      <a href="#">
+        <img class= "menu-img" src="app_m/img/5.png" alt="">
+      </a>
+    </div>
+    <div class="menu-items">
+      <a href="#">
+        <img class= "menu-img" src="app_m/img/6.png" alt="">
+      </a>
+    </div>
+    <div class="menu-items">
+      <a href="#">
+        <img class= "menu-img" src="app_m/img/7.png" alt="">
+      </a>
+    </div>
+    <div class="menu-items">
+      <a href="#">
+        <img class= "menu-img" src="app_m/img/8.png" alt="">
+      </a>
+    </div>
+    <div class="menu-items">
+      <a href="#">
+        <img class= "menu-img" src="app_m/img/9.png" alt="">
+      </a>
+    </div>
+
+  </div>
     
 
 
