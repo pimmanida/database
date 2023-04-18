@@ -43,7 +43,7 @@
         // Check if table number is set
         if (isset($_GET["table_number"])) {
             $table_number = $_GET["table_number"];
-
+            echo "Table number : $table_number";
             // SQL to insert reservation
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $customer = $_POST["customer"];
