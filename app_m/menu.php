@@ -36,9 +36,7 @@
 
 
       <div class="big-product-items">
-        <a href="#">
           <img class="product-img" src="img/1.png" alt="">
-      </a>
       </div>
 
       <div class="small-product-items2">
@@ -62,29 +60,34 @@
     
     <div class="menu-items">
       <a href="#">
-        <img class= "menu-img" src="app_m/img/4.png" alt="">
+        <img class= "menu-img" src="app_m/img/5.png" alt="">
       </a>
     </div>
+
     <div class="menu-items">
       <a href="#">
         <img class= "menu-img" src="app_m/img/5.png" alt="">
       </a>
     </div>
+
     <div class="menu-items">
       <a href="#">
         <img class= "menu-img" src="app_m/img/6.png" alt="">
       </a>
     </div>
+
     <div class="menu-items">
       <a href="#">
         <img class= "menu-img" src="app_m/img/7.png" alt="">
       </a>
     </div>
+
     <div class="menu-items">
       <a href="#">
         <img class= "menu-img" src="app_m/img/8.png" alt="">
       </a>
     </div>
+
     <div class="menu-items">
       <a href="#">
         <img class= "menu-img" src="app_m/img/9.png" alt="">
@@ -95,136 +98,5 @@
     
 
 
-
-
-    <div class="modal" style="display: none;">
-      <div class="modal-bg"></div>
-      <div class="modal-page">
-        <h2>Detail</h2>
-        <br>
-        <div class="modaldesc-content">
-          <img class="modaldesc-img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
-          <div class="modaldesc-detail">
-            <p style="font-size: 1.5vw;">Product name</p>
-            <p style="font-size: 1.2vw;">500 THB</p>
-            <br>
-            <p style="color: #adadad;">Lorem iaudantium harum doloremque alias. Quae, vel ipsum quasi, voluptas, sit optio nemo magni numquam non dicta voluptates porro! Vero eveniet numquam sit aut vel eligendi officiis iste tenetur expedita. Delectus vero quibusdam adipisci in. Esse.</p>
-            <br>
-            <div class="btn-control">
-              <button class="btn">
-                Close
-              </button>
-              <button class="btn btn-buy">
-                Add to cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <div class="modal" style="display: none;">
-      <div class="modal-bg"></div>
-      <div class="modal-page">
-        <h2>My cart</h2>
-        <br>
-        <div class="cartlist">
-          <div class="cartlist-items">
-            <div class="cartlist-left">
-              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
-              <div class="cartlist-detail">
-                <p style="font-size: 1.5vw;">Product name</p>
-                <p style="font-size: 1.2vw;">500 THB</p>
-              </div>
-            </div>
-            <div class="cartlist-right">
-              <p class="btnc">-</p>
-              <p style="margin: 0 20px;">1</p>
-              <p class="btnc">+</p>
-            </div>
-          </div>
-          <div class="cartlist-items">
-            <div class="cartlist-left">
-              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
-              <div class="cartlist-detail">
-                <p style="font-size: 1.5vw;">Product name</p>
-                <p style="font-size: 1.2vw;">500 THB</p>
-              </div>
-            </div>
-            <div class="cartlist-right">
-              <p class="btnc">-</p>
-              <p style="margin: 0 20px;">1</p>
-              <p class="btnc">+</p>
-            </div>
-          </div>
-          <div class="cartlist-items">
-            <div class="cartlist-left">
-              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
-              <div class="cartlist-detail">
-                <p style="font-size: 1.5vw;">Product name</p>
-                <p style="font-size: 1.2vw;">500 THB</p>
-              </div>
-            </div>
-            <div class="cartlist-right">
-              <p class="btnc">-</p>
-              <p style="margin: 0 20px;">1</p>
-              <p class="btnc">+</p>
-            </div>
-          </div>
-          <div class="cartlist-items">
-            <div class="cartlist-left">
-              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
-              <div class="cartlist-detail">
-                <p style="font-size: 1.5vw;">Product name</p>
-                <p style="font-size: 1.2vw;">500 THB</p>
-              </div>
-            </div>
-            <div class="cartlist-right">
-              <p class="btnc">-</p>
-              <p style="margin: 0 20px;">1</p>
-              <p class="btnc">+</p>
-            </div>
-          </div>
-          <div class="cartlist-items">
-            <div class="cartlist-left">
-              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
-              <div class="cartlist-detail">
-                <p style="font-size: 1.5vw;">Product name</p>
-                <p style="font-size: 1.2vw;">500 THB</p>
-              </div>
-            </div>
-            <div class="cartlist-right">
-              <p class="btnc">-</p>
-              <p style="margin: 0 20px;">1</p>
-              <p class="btnc">+</p>
-            </div>
-          </div>
-          <div class="cartlist-items">
-            <div class="cartlist-left">
-              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
-              <div class="cartlist-detail">
-                <p style="font-size: 1.5vw;">Product name</p>
-                <p style="font-size: 1.2vw;">500 THB</p>
-              </div>
-            </div>
-            <div class="cartlist-right">
-              <p class="btnc">-</p>
-              <p style="margin: 0 20px;">1</p>
-              <p class="btnc">+</p>
-            </div>
-          </div>
-  
-        </div>
-        <div class="btn-control">
-          <button class="btn">
-            Cancel
-          </button>
-          <button class="btn btn-buy">
-            Buy
-          </button>
-        </div>
-      </div>
-    </div>
-  
   </body>
 </html>
