@@ -42,18 +42,18 @@
     <img class="product-img" src="img/1.png" alt="">
   </div>
 
-  <div class="small-product">
-    <div class="small-product-items2">
-      <img class="product-img" src="img/2.png" alt="">
-    </div>
-
-    <div class="small-product-items3">
-      <img class="product-img" src="img/3.png" alt="">
-    </div>
-  </div>
-  </div>
-
-
+      <div class= "small-product">
+        <div class="small-product-items2">
+            <img class="product-img" src="img/2.png" alt="">
+        </div>
+        
+        <div class="small-product-items3">
+            <img class="product-img" src="img/3.png" alt="">
+        </div>
+      </div>
+  </div> 
+  
+      
 
   <div class="menu">
 
