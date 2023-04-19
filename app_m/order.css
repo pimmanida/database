@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-decoration: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    font-size: 1rem;
+    background-color: #D9DBD6;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 18px;
+    margin-top: 2%;
+}
+
+.logo p{
+    font-family: '.New York';
+}
+
+o{
+    font-weight: 900;
+}
+
+t{
+    margin-left: 65%;
+    font-weight: 400;
+}
+
+.container{
+    display: flex;
+    /* height: 60%; */
+    width: 60%;
+    flex-direction: row;
+    justify-content: right;
+    /* align-items: center; */
+    gap: 1%;
+    /* background-color: #efab37; */
+}
+
+.col{
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 10px;
+    grid-column-gap: 30%;
+    /* background-color: #319bc9; */
+    padding: 10px ;
+    
+}
+
+u{
+    /* margin-left: 30%; */
+    background-color: transparent;    
+}
+
+input{
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    /* margin-left: 30%; */
+    border: none;
+    box-shadow: 5px 5px 5px -5px rgba(54, 48, 48, 0.75);
+    padding: 4px;
+    width: 100%;
+    /* margin-top: 0.2%; */
+    
+}
+
+.order-bt{
+    margin-top: 80px;
+    margin-left: 150px;
+    background-color: transparent;
+}
+
+.button1{
+    background-color: #997954;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 40px;
+    box-shadow: 5px 5px 5px -5px rgba(54, 48, 48, 0.75);
+    border-radius: 1rem;
+    margin-left: 45%;
+}
+
+a{
+    color: #ffffff;
+    background-color: transparent;
+}
+
+button:active{
+    background-color: #319bc9;
+}
+
+a:visited{
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #efab37;
+}
