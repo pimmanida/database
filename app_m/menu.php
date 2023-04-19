@@ -21,7 +21,7 @@
     <b>
       <p style="font-size: 3vw;">S A H A R A</p>
     </b>
-    <hr width="60%" size="6">
+      <hr width="60%" size="6">
     <br>
   </div>
 
@@ -39,16 +39,16 @@
 
 
   <div class="big-product-items">
-    <img class="product-img" src="img/1.png" alt="">
+    <img class="big-product-img" src="img/1.png" alt="">
   </div>
 
   <div class="small-product">
     <div class="small-product-items">
-      <img class="small-product-img" src="img/2.png" alt="">
+      <img class="smaill-product-img" src="img/2.png" alt="">
     </div>
 
     <div class="small-product-items">
-      <img class="small-product-img" src="img/3.png" alt="">
+      <img class="product-img" src="img/3.png" alt="">
     </div>
   </div>
   </div>
@@ -82,7 +82,7 @@
     </div>
 
     <div class="menu-items">
-      <a href="#">
+      <a href="book_table.php">
         <img class="menu-img" src="img/8.png" alt="">
       </a>
     </div>
