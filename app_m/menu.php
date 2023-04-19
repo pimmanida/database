@@ -42,6 +42,7 @@
     <img class="big-product-img" src="img/1.png" alt="">
   </div>
 
+<<<<<<< HEAD
   <div class="small-product">
     <div class="small-product-items">
       <img class="smaill-product-img" src="img/2.png" alt="">
@@ -54,6 +55,20 @@
   </div>
 
 
+=======
+      <div class= "small-product">
+        <div class="small-product-items2">
+            <img class="product-img" src="img/2.png" alt="">
+        </div>
+        
+        <div class="small-product-items3">
+            <img class="product-img" src="img/3.png" alt="">
+        </div>
+      </div>
+  </div> 
+  
+      
+>>>>>>> 7ff7d0064145896c8723d0f37fc29c3ad8bea342
 
   <div class="menu">
 

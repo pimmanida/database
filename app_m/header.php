@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-    session_start();
+session_start();
 
 ?>
 
@@ -21,7 +21,9 @@
                 </a>
                 <a href="#" class="profile">
                     <i class="fas fa-user"></i>
-                    <h1><?php echo $_SESSION['fname']; ?></h1>
+                    <h1>
+                        <?php echo $_SESSION['fname']; ?>
+                    </h1>
                 </a>
             </nav>
         </div>
@@ -65,7 +67,8 @@
         gap: 1.6rem;
     }
 
-    nav a, h1 {
+    nav a,
+    h1 {
         font-style: normal;
         font-weight: 400;
         font-size: 0.875rem;
@@ -92,10 +95,11 @@
         gap: 1rem;
         align-items: center;
     }
+
     .profile h1 {
         vertical-align: middle;
     }
 </style>
-<?php 
+<?php
 
 ?>
