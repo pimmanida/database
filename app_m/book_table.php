@@ -13,6 +13,22 @@
     <div class="container1">
         <h1>SAHARA</h1>
         <hr style="width: 60rem; fiborder: 1px solid #000000;">
+        <div class="sub">
+            <p>book table :</p>
+            <?php
+            // Include config file
+            require_once "config2.php";
+            // Check if table number is set
+            if (isset($_GET["table_number"])) {
+                $table_number = $_GET["table_number"]; ?>
+                <p> <?php echo "Table number $table_number"; ?></p>
+                <?php // SQL to insert reservation                                                      
+            } else {
+                echo "Error: Table number not specified";
+            }
+            ?>
+        </div>
+        
         <form method="post">
             <div class="container2">
                 <div class="box">
@@ -37,15 +53,8 @@
             </div>
             
         </form>
-        <?php
-        // Include config file
-        require_once "config2.php";
-        // Check if table number is set
-        if (isset($_GET["table_number"])) {
-            $table_number = $_GET["table_number"];
-            echo "Table number : $table_number";
-            // SQL to insert reservation
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        <?php if (isset($_GET["table_number"])) { ?>
+            <?php if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $customer = $_POST["customer"];
                 $phone_number = $_POST["phone_number"];
                 $date_of_reservation = $_POST["date_of_reservation"];
@@ -63,10 +72,12 @@
                 // Close connection
                 $conn->close();
             }                                                               
-        } else {
-            echo "Error: Table number not specified";
-        }
-        ?>
+            } ?>
+            <div class="inp">
+                <a href="view_tables.php">
+                <input type="button" value="view table">
+                </a>
+            </div>
     </div>
     
 </body>
