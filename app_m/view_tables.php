@@ -12,7 +12,11 @@
     <?php include 'header.php'; ?>
     <div class="container1">
         <h1>SAHARA</h1>
+        
         <hr style="width: 60rem; fiborder: 1px solid #000000;">
+        <div class="sub">
+            <p>view tables</p>
+        </div>
     <?php
     // Include config file
     require_once "config2.php";
@@ -32,30 +36,45 @@
     }
     ?>
     <div class="container4">
-    <?php
+    <?php 
     for ($i = 1; $i <= 6; $i++) {
-        if (in_array($i, $booked_tables)) {
-            // Table is booked ?>
-            <div class="table">
-                <button style="background-color:red;" disabled>Table <?php echo $i ?> (Booked)</button>
-            </div>
-        <?php
-        } else {
             // Table is available ?>
+            <?php if ($i > 3) { $i--;  ?>
             <div class="container5">
-                <?php for ($j=1; $j<=3; $j++) { ?>
-                <div class="table">
+                <?php for ($j=0; $j<=2; $j++) { 
+                    if (in_array($i, $booked_tables)) {
+                    ?><div class="table">
+                    <button disabled>Table <?php echo $i ?> (Booked)</button>
+                </div> <?php } else { ?>
+                    <div class="table">
                     <a href="book_table.php?table_number=<?php echo $i ?>">
                         <button>Table  <?php echo $i ?>  (Available)</button>
                     </a>
                 </div>
-                <?php $i++; } ?>
+                <?php } ?>
+
+                
+                <?php $i++; }} else { ?>
+                    <div class="container5">
+                <?php for ($j=0; $j<=2; $j++) { 
+                    
+                if (in_array($i, $booked_tables)) {?>
+                    <div class="table">
+                    <button disabled>Table <?php echo $i ?> (Booked)</button>
+                </div> <?php } else { ?>
+                    <div class="table">
+                    <a href="book_table.php?table_number=<?php echo $i ?>">
+                        <button>Table  <?php echo $i ?>  (Available)</button>
+                    </a>
+                </div>
+                <?php }
+                 $i++;}} ?>
             </div>
             
         <?php
         }
         echo '&nbsp&nbsp';
-    }
+    
 
     // Close connection
     $conn->close();
@@ -63,3 +82,5 @@
     </div>
 </body>
 </html>
+
+

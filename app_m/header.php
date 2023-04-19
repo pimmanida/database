@@ -74,11 +74,16 @@
         padding: 0.25rem 0.5rem;
         text-decoration: none;
         transition: all 0.3s;
+        background: transparent;
     }
 
     nav a:hover {
         background: rgba(170, 127, 90, 0.25);
         border-radius: 0.5rem;
+    }
+
+    nav a i {
+        background: transparent;
     }
 
     .profile {
