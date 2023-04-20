@@ -14,6 +14,7 @@
         if ($num > 0) {
             $_SESSION['id'] = $num['id'];
             $_SESSION['fname'] = $num['fullname'];
+            $_SESSION['uname'] = $num['username'];
             echo "<script>alert('Login Successful!');</script>";
             echo "<script>window.location.href='welcome.php'</script>";
         } else {
