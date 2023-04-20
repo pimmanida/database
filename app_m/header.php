@@ -9,7 +9,7 @@ session_start();
         <div class="sec1">
             <img src="img/SAHARA.svg" alt="">
             <nav class="navbar">
-                <a href="menu.html">Home</a>
+                <a href="menu.php">Home</a>
                 <a href="menumenu.php">Menu</a>
                 <a href="#">My order</a>
                 <a href="view_tables.php">View table</a>
