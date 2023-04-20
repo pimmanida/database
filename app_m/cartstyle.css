@@ -81,8 +81,6 @@ html {
     gap: 1rem;
 }
 
-
-
 .box2 h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -110,6 +108,19 @@ html {
     letter-spacing: 0.001em;
 }
 
+.remove-btn {
+    background-color: #000000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #b1b1b1;
+    color: #000000;
+}
+
 form {
     display: flex;
     flex-direction: row;
@@ -120,7 +131,6 @@ form {
 form .quantity {
     width: 3rem;
     background-color: transparent;
-    border-radius: 1rem;
     border: none;
 }
 
@@ -132,17 +142,22 @@ form .submit {
     border: none;
     padding: 0.25rem 0.5rem;
     border-radius: 0.5rem;
+    transition: all 0.3s;
+}
+
+form .submit:hover {
+    background-color: #b1b1b1;
+    color: #000000;
 }
 
 .container2 {
     display: flex;
     flex-direction: row;
-    
     align-items: center;
     padding: 0px;
     gap: 0.5rem;
-    margin-top: 0.5rem;
-    margin-left: 50rem;
+    justify-content: space-between;
+    width: 56rem;
 }
 
 .box4{
@@ -152,6 +167,7 @@ form .submit {
     flex-direction: row;
     align-items: center;
     gap: 3rem;
+    justify-content: space-between;
 }
 
 .container3 {
@@ -160,18 +176,17 @@ form .submit {
     align-items: center;
     padding: 0px;
     gap: 0.5rem;
-    margin-top: 0rem;
 }
 
 
 .box5{
     display: flex;
     height: 10rem;
-    width: 69rem;
     flex-direction: row;
     align-items: center;
     gap: 3rem;
     background:transparent;   
+    margin: auto;
 }
 
 
@@ -181,7 +196,7 @@ form .submit {
 	position: relative;
 	padding: 1.5em 1em;
 	appearance: none;
-	border: 0;
+	border: none;
 	background: transparent;
 	color: #000000;
 	text-transform: uppercase;
@@ -189,8 +204,15 @@ form .submit {
 	outline: none;
 	cursor: pointer;
 	font-weight: bold;
-	border-radius: 25px 25px 25px 25px;
+	border-radius: 1.5rem;
 	box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    border: transparent;
+    background-color: #000000;
+    color: #fff;
 }
 
 .box3 button{
@@ -199,4 +221,16 @@ form .submit {
     border: none;
 }
 
+.box4 h6 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
 
+.box4 a {
+    width: fit-content;
+    text-align: center;
+}
+
+.box5 button {
+    width: 20rem;
+}

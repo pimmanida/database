@@ -25,7 +25,7 @@ if (isset($_POST['add_to_cart'])) {
 
 }
 
-$active_menu = isset($_GET['active_menu']) ? $_GET['active_menu'] : 'thai';
+$active_menu = isset($_GET['active_menu']) ? $_GET['active_menu'] : 'all';
 
 ?>
 <!DOCTYPE html>
@@ -46,7 +46,7 @@ $active_menu = isset($_GET['active_menu']) ? $_GET['active_menu'] : 'thai';
     <?php include 'header.php'; ?>
     <div class="container1">
         <h1>SAHARA</h1>
-        <hr style="width: 60rem; fiborder: 1px solid #000000;">
+        <hr style="width: 60rem; border: 1px solid #000000;">
         <?php include 'foodnavbar.php'; ?>
         <div class="product" style="color:#784A14;">
             <?php
