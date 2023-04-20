@@ -25,6 +25,7 @@ if (isset($_POST['add_to_cart'])) {
 
 }
 
+$active_menu = isset($_GET['active_menu']) ? $_GET['active_menu'] : 'thai';
 
 ?>
 <!DOCTYPE html>
@@ -39,13 +40,9 @@ if (isset($_POST['add_to_cart'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="cartstyle.css">
-    <script src="script.js" defer></script>
 </head>
 
 <body>
-
     <?php include 'header.php'; ?>
     <div class="container1">
         <h1>SAHARA</h1>
@@ -54,19 +51,15 @@ if (isset($_POST['add_to_cart'])) {
         <div class="product" style="color:#784A14;">
             <?php
             include('menudb.php');
-
-            $product_array = $db_handle->runQuery("SELECT * FROM menu ORDER BY menuid ASC");
+            $product_array = $db_handle->runQuery("SELECT * FROM menu ORDER BY menu.type ASC");
             if (!empty($product_array)) {
                 foreach ($product_array as $key => $value) {
-                    ?>
-                    <div class="productcon">
-                        <form action="01.php" method="post">
-                            <input type="hidden" name="pd-id" value="<?php echo $product_array[$key]["code"] ?>">
-                            <a href="01.php?id=<?php echo $product_array[$key]["code"] ?>"
-                                style="text-decoration:none; color:#784A14;">
-
+                    if ($active_menu == 'all' || $value['type'] == $active_menu) {
+                        ?>
+                        <div class="productcon">
+                            <form action="01.php" method="post">
                                 <div class="product-items">
-                                    <img class="product-img" src="imgs/<?php echo $product_array[$key]["imgindex"]; ?>" alt=""> 
+                                    <img class="product-img" src="imgs/<?php echo $product_array[$key]["imgindex"]; ?>" alt="">
                                     <p id="pd-name" style="font-size: 1.2vw;">
                                         <?php echo $product_array[$key]["name"]; ?>
                                     </p>
@@ -76,21 +69,22 @@ if (isset($_POST['add_to_cart'])) {
 
 
                                 </div>
-                            </a>
+                                </a>
 
-                        </form>
-                        <form action="" method="post">
-                            <?php
-                            $fetch_product = getFromMenu($pdo2, $product_array[$key]["code"]);
-                            ?>
-                            <input type="hidden" name="product_name" value="<?php echo $fetch_product['name']; ?>">
-                            <input type="hidden" name="product_price" value="<?php echo $fetch_product['price']; ?>">
-                            <input type="hidden" name="product_image" value="<?php echo $fetch_product['imgindex']; ?>">
-                            <div class="btncon"><input type="submit" class="btn" value="add to cart" name="add_to_cart"></div>
-                        </form>
-                    </div>
+                            </form>
+                            <form action="" method="post">
+                                <?php
+                                $fetch_product = getFromMenu($pdo2, $product_array[$key]["code"]);
+                                ?>
+                                <input type="hidden" name="product_name" value="<?php echo $fetch_product['name']; ?>">
+                                <input type="hidden" name="product_price" value="<?php echo $fetch_product['price']; ?>">
+                                <input type="hidden" name="product_image" value="<?php echo $fetch_product['imgindex']; ?>">
+                                <div class="btncon"><input type="submit" class="btn" value="add to cart" name="add_to_cart"></div>
+                            </form>
+                        </div>
 
-                    <?php
+                        <?php
+                    }
                 }
             }
             ?>

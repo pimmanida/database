@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
     font-size: 1rem;
 }
 
@@ -33,7 +35,7 @@ html {
     text-align: center;
     letter-spacing: 0.5em;
     color: #000000;
-    
+
 }
 
 .sidebar {
@@ -56,10 +58,11 @@ html {
     border-radius: 0.5rem;
 }
 
-.sidebar a::after {
+.sidebar a.active {
     background-color: #B1B1B1;
     border-radius: 0.5rem;
 }
+
 .productcon {
     display: flex;
     flex-direction: column;
