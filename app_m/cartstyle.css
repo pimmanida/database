@@ -23,7 +23,7 @@ html {
     justify-content: center;
     align-items: center;
     padding: 0px;
-    gap: 0.5rem;
+    gap: 1.5rem;
     margin-top: 5rem;
 }
 
@@ -38,17 +38,24 @@ html {
     color: #000000;
     
 }
+
+.subbox1 {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
 .box1{
     display: flex;
     height: 13rem;
-    width: 69rem;
+    width: fit-content;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    gap: 3rem;
+    gap: 9rem;
     background-color: #fffbf0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 2.5rem;
+    
 }
 
 .box1 img{
@@ -63,33 +70,34 @@ html {
     width: 17rem;
     margin-left: 1rem;
     border-radius: 2.0rem;
- 
- }
-.box2{
+}
+.box2 {
     display: flex;
     height: 10rem;
     width: 30rem;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     gap: 1rem;
 }
 
-.box2 h1{
-    font-weight: 674;
-    font-size: 2rem;
-    letter-spacing: 0.1em;
+
+
+.box2 h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    
 }
 .box2 h2{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1rem;
     letter-spacing: 0.1em;
 }
 
 .box3{
     display: flex;
-    height: 12rem;
-    width: 30rem;
+    padding-right: 2rem;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -97,9 +105,33 @@ html {
 }
 
 .box3 h2{
-    font-weight: 250;
-    font-size: 2rem;
+    font-weight: 400;
+    font-size: 1rem;
     letter-spacing: 0.001em;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: fit-content;
+}
+
+form .quantity {
+    width: 3rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    border: none;
+}
+
+form .submit {
+    width: fit-content;
+    height: fit-content;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .container2 {
