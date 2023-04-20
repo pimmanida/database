@@ -110,11 +110,9 @@
   object-fit: cover;
   border-radius: 10px;
   border-radius: 12px 12px 12px 12px;
+  box-shadow: 3px 2px 2px #AA7F5A;
 }
 
-.menu-img :hover {
-  transform: scale(1.03);
-}
 
 
 
