@@ -17,7 +17,7 @@
     <div class="container1">
         <h1>SAHARA</h1>
 
-        <hr style="width: 60rem; fiborder: 1px solid #000000;">
+        <hr style="width: 60rem; border: 1px solid #000000;">
         <div class="sub">
             <p>view tables</p>
         </div>

@@ -45,7 +45,7 @@ if (isset($_GET['delete_all'])) {
     <?php include 'header.php'; ?>
     <div class="container1">
         <h1>SAHARA</h1>
-        <hr style="width: 60rem; fiborder: 1px solid #000000;">
+        <hr style="width: 60rem; border: 1px solid #000000;">
         <h2>SHOPPING CART</h2>
 
         <?php
@@ -58,7 +58,7 @@ if (isset($_GET['delete_all'])) {
                 <div class="box1">
                     <div class="subbox1">
                         <div class="img">
-                            <img src="imgs/veg1.jpeg">
+                            <img src="imgs/<?php echo $fetch_cart['image']; ?>">
                         </div>
                         <div class="box2">
                             <h3>
@@ -79,7 +79,7 @@ if (isset($_GET['delete_all'])) {
                         <h2>
                             <?php echo $sub_total = number_format($fetch_cart['price'] * $fetch_cart['quantity']); ?> THB
                         </h2>
-                        <button><a href="cart.php?remove=<?php echo $fetch_cart['id']; ?>" onclick="return confirm('remove item from cart?')" class="delete-btn"> <i class="fas fa-trash"></i> remove</a></button>
+                        <a href="cart.php?remove=<?php echo $fetch_cart['id']; ?>" onclick="return confirm('remove item from cart?')" class="remove-btn"> <i class="fas fa-trash"></i> remove</a>
                     </div>
                 </div>
                 <?php
@@ -96,8 +96,8 @@ if (isset($_GET['delete_all'])) {
         <div class="container2">
             <div class="box4">
                 <a href="menumenu.php" class="button">continue shopping</a>
-                <h6 style="width:fit-content">&emsp;Total &nbsp;: <?php echo $grand_total; ?></h6>
-                <a href="cart.php?delete_all" onclick="return confirm('are you sure you want to delete all?');" class="delete-btn"> <i class="fas fa-trash"></i> delete all </a>
+                <h6 style="width:fit-content">&emsp;Total &nbsp;: <?php echo $grand_total; ?> THB</h6>
+                <a href="cart.php?delete_all" onclick="return confirm('are you sure you want to delete all?');" class="button"> <i class="fas fa-trash"></i> delete all </a>
             </div>
         </div>
     </div>

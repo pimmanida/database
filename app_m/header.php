@@ -9,14 +9,15 @@ session_start();
         <div class="sec1">
             <img src="img/SAHARA.svg" alt="">
             <nav class="navbar">
-                <a href="#">Home</a>
-                <a href="#">Menu</a>
+                <a href="menu.php">Home</a>
+                <a href="menumenu.php">Menu</a>
                 <a href="#">My order</a>
+                <a href="view_tables.php">View table</a>
             </nav>
         </div>
         <div class="sec2">
             <nav>
-                <a href="#">
+                <a href="cart.php">
                     <i class="fas fa-cart-shopping" style="align-items: center;"></i>
                 </a>
                 <a href="#" class="profile">
