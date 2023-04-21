@@ -1,30 +1,31 @@
-<?php 
-    session_start();
-    include_once('functions.php'); 
-    
-    $userdata = new DB_con();
+<?php
+session_start();
+include_once('functions.php');
 
-    if (isset($_POST['login'])) {
-        $uname = $_POST['username'];
-        $password = md5($_POST['password']);
+$userdata = new DB_con();
 
-        $result = $userdata->signin($uname, $password);
-        $num = mysqli_fetch_array($result);
+if (isset($_POST['login'])) {
+    $uname = $_POST['username'];
+    $password = md5($_POST['password']);
 
-        if ($num > 0) {
-            $_SESSION['id'] = $num['id'];
-            $_SESSION['fname'] = $num['fullname'];
-            echo "<script>alert('Login Successful!');</script>";
-            echo "<script>window.location.href='welcome.php'</script>";
-        } else {
-            echo "<script>alert('Something went wrong! Please try again.');</script>";
-            echo "<script>window.location.href='signin.php'</script>";
-        }
+    $result = $userdata->signin($uname, $password);
+    $num = mysqli_fetch_array($result);
+
+    if ($num > 0) {
+        $_SESSION['id'] = $num['id'];
+        $_SESSION['fname'] = $num['fullname'];
+        echo "<script>alert('Login Successful!');</script>";
+        echo "<script>window.location.href='menu.php'</script>";
+    } else {
+        echo "<script>alert('Something went wrong! Please try again.');</script>";
+        echo "<script>window.location.href='login.php'</script>";
     }
+}
 
-    
+
 ?>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,6 +33,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="sec1">
         <div class="head">
@@ -56,4 +58,5 @@
         </div>
     </div>
 </body>
+
 </html>

@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-    session_start();
+session_start();
 
 ?>
 
@@ -9,19 +9,22 @@
         <div class="sec1">
             <img src="img/SAHARA.svg" alt="">
             <nav class="navbar">
-                <a href="#">Home</a>
-                <a href="#">Menu</a>
+                <a href="menu.php">Home</a>
+                <a href="menumenu.php">Menu</a>
                 <a href="#">My order</a>
+                <a href="view_tables.php">View table</a>
             </nav>
         </div>
         <div class="sec2">
             <nav>
-                <a href="#">
+                <a href="cart.php">
                     <i class="fas fa-cart-shopping" style="align-items: center;"></i>
                 </a>
                 <a href="#" class="profile">
                     <i class="fas fa-user"></i>
-                    <h1><?php echo $_SESSION['fname']; ?></h1>
+                    <h1>
+                        <?php echo $_SESSION['fname']; ?>
+                    </h1>
                 </a>
             </nav>
         </div>
@@ -65,7 +68,8 @@
         gap: 1.6rem;
     }
 
-    nav a, h1 {
+    nav a,
+    h1 {
         font-style: normal;
         font-weight: 400;
         font-size: 0.875rem;
@@ -74,11 +78,16 @@
         padding: 0.25rem 0.5rem;
         text-decoration: none;
         transition: all 0.3s;
+        background: transparent;
     }
 
     nav a:hover {
         background: rgba(170, 127, 90, 0.25);
         border-radius: 0.5rem;
+    }
+
+    nav a i {
+        background: transparent;
     }
 
     .profile {
@@ -87,10 +96,11 @@
         gap: 1rem;
         align-items: center;
     }
+
     .profile h1 {
         vertical-align: middle;
     }
 </style>
-<?php 
+<?php
 
 ?>
