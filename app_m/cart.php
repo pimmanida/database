@@ -58,7 +58,7 @@ if (isset($_GET['delete_all'])) {
                 <div class="box1">
                     <div class="subbox1">
                         <div class="img">
-                            <img src="imgs/veg1.jpeg">
+                            <img src="imgs/<?php echo $fetch_cart['image']; ?>">
                         </div>
                         <div class="box2">
                             <h3>

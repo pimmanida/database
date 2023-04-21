@@ -15,10 +15,10 @@ if (isset($_POST['login'])) {
         $_SESSION['id'] = $num['id'];
         $_SESSION['fname'] = $num['fullname'];
         echo "<script>alert('Login Successful!');</script>";
-        echo "<script>window.location.href='welcome.php'</script>";
+        echo "<script>window.location.href='menu.php'</script>";
     } else {
         echo "<script>alert('Something went wrong! Please try again.');</script>";
-        echo "<script>window.location.href='signin.php'</script>";
+        echo "<script>window.location.href='login.php'</script>";
     }
 }
 
