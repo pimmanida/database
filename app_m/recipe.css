@@ -1,16 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins';
-    text-decoration: none;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    font-size: 100%;
-    background-color: #D9DBD6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  font-size: 1rem;
 }
+
+html {
+  font-size: calc(60% + 0.8vmin);
+  background: #D9DBD6;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 1.5rem;
+  margin-top: 5rem;
+}
+
+.container1 h1 {
+    font-family: '.New York';
+    font-style: normal;
+    font-weight: 674;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+    letter-spacing: 0.5em;
+    color: #000000;
+  }
 
 .container{
     display: flex;
@@ -78,7 +102,7 @@ t1{
     margin-left: 500px;
 }
 
-.button1{
+.button2 {
     background-color: #997954;
     border: none;
     padding: 10px;
@@ -98,16 +122,4 @@ a{
     background-color: transparent;
 }
 
-button:active{
-    background-color: #319bc9;
-}
 
-a:visited{
-    color: #ffffff;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:hover{
-    color: #efab37;
-}
