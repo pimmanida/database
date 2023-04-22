@@ -107,9 +107,7 @@ if (isset($_GET['delete_all'])) {
 
     <div class="container3">
         <div class="box5">
-            
-            <button class="button">order checkout</button>
-
+            <button onclick="location.href='order.php';" class="button">order checkout</button>
         </div>
     </div>
 

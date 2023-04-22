@@ -3,8 +3,8 @@
 session_start();
 
 ?>
-
-<header class="header">
+<div class="header">
+<header >
     <div class="flex">
         <div class="sec1">
             <img src="img/SAHARA.svg" alt="">
@@ -20,24 +20,43 @@ session_start();
                 <a href="cart.php">
                     <i class="fas fa-cart-shopping" style="align-items: center;"></i>
                 </a>
-                <a href="#" class="profile">
-                    <i class="fas fa-user"></i>
-                    <h1>
-                        <?php echo $_SESSION['fname']; ?>
-                    </h1>
-                </a>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="#" class="profile">
+                            <i class="fas fa-user"></i>
+                            <h1>
+                                <?php echo $_SESSION['fname']; ?>
+                            </h1>
+                        </a>
+
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="logout.php">Logout</a>
+                        </div>
+
+                    </button>
+                </div>
             </nav>
         </div>
-    </div>
-</header>
 
+</header>
+</div>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 
     header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
         font-family: 'Poppins', sans-serif;
         width: 100vw;
+        background-color: #D9DBD6;
+    }
+
+    .header {
+        margin-bottom: 9rem;
     }
 
     .sec2 i {
@@ -100,7 +119,52 @@ session_start();
     .profile h1 {
         vertical-align: middle;
     }
-</style>
-<?php
 
-?>
+    .dropbtn {
+        background-color: transparent;
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: list-item;
+        list-style: none;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #F5F5F0;
+        min-width: 8.5rem;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 1rem;
+    }
+
+    .dropdown-content a {
+        color: #784A14;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:focus-within .dropdown-content {
+        display: block;
+    }
+</style>
+
+<script>
+    // ค้นหาปุ่ม dropdown
+    const dropdown = document.querySelector('.dropdown');
+
+    // เมื่อคลิกที่ปุ่ม dropdown ให้เปิดหรือปิด dropdown
+    dropdown.addEventListener('click', function () {
+        this.classList.toggle('active');
+    });
+
+</script>

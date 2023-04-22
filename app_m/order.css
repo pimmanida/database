@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    font-size: 1rem;
+}
+
+html {
+    font-size: calc(60% + 0.8vmin);
+    background: #D9DBD6;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 1.5rem;
+    margin-top: 5rem;
+}
+
+.container1 h1 {
+    font-family: '.New York';
+    font-style: normal;
+    font-weight: 674;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+    letter-spacing: 0.5em;
+    color: #000000;
+}
+
+
+o {
+    font-weight: 900;
+}
+
+t {
+    font-weight: 400;
+}
+
+.col {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 10px;
+    grid-gap: 2rem;
+    width: fit-content;
+}
+
+.inp {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+u {
+    background-color: transparent;
+}
+
+input,
+select {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    /* margin-left: 30%; */
+    border: none;
+    box-shadow: 5px 5px 5px -5px rgba(54, 48, 48, 0.75);
+    padding: 4px;
+    width: 20rem;
+    font-size: 1rem;
+
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    text-transform: none;
+
+}
+
+.inputBox {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 5px 5px 5px -5px rgba(54, 48, 48, 0.75);
+    padding: 4px;
+    width: 100%;
+}
+
+select {
+    background-color: #ffffff;
+    border: none;
+    color: #979797;
+}
+
+.button1 {
+    background-color: #000000;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    box-shadow: 5px 5px 5px -5px rgba(54, 48, 48, 0.75);
+    border-radius: 1rem;
+    width: 42rem;
+    padding: 1rem 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+.button1:hover {
+    background-color: #b1b1b1;
+    color: #000000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+a {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.order-message-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+}
+
+.order-message-container::-webkit-scrollbar {
+    width: 1rem;
+}
+
+.order-message-container::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.order-message-container .message-container {
+    width: 30rem;
+    height: fit-content;
+    background-color: #D9DBD6;
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.order-message-container .message-container h3 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.order-message-container .message-container .order-detail {
+    /* background-color: var(--bg-color); */
+    border-radius: .5rem;
+    margin: 1rem 0;
+}
+
+.order-message-container .message-container .order-detail span {
+    border: #000000 1px solid;
+    border-radius: .5rem;
+    color: #000000;
+    display: inline-block;
+    margin: 1rem;
+    padding: .5rem 1rem;
+}
+
+.order-message-container .message-container .order-detail span.total {
+    display: block;
+    background: #000000;
+    color: #F5F5F0;
+}
+
+.order-message-container .message-container .customer-details {
+    margin: 1.5rem 0;
+}
+
+.order-message-container .message-container .customer-details p {
+    color: #000000;
+    padding: .25rem;
+}
+
+.order-message-container .message-container .customer-details p span {
+    color: #8C8C8C;
+    text-transform: none;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+    color: #F5F5F0;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease-out;
+}

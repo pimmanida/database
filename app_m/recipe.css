@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  font-size: 1rem;
+}
+
+html {
+  font-size: calc(60% + 0.8vmin);
+  background: #D9DBD6;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 1.5rem;
+  margin-top: 5rem;
+}
+
+.container1 h1 {
+    font-family: '.New York';
+    font-style: normal;
+    font-weight: 674;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+    letter-spacing: 0.5em;
+    color: #000000;
+  }
+
+.container{
+    display: flex;
+    height: 20%;
+    width: 40%;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* flex: 1; */
+    /* gap: 10%; */
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 5px 5px 5px -5px rgba(54, 48, 48, 0.75);
+    padding: 20px 4px;
+    margin-left: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 18px;
+    font-family: 'Arial Narrow';
+    margin-top: 2%;
+}
+
+.logo p{
+    font-family: '.New York';
+}
+
+s{
+    font-weight: 900;
+    color: rgb(11, 136, 11);
+}
+
+t{
+    background-color: #ffffff;
+}
+
+.u{
+    background-color: #ffffff;
+}
+
+t1{
+    background-color: #ffffff;
+}
+
+.total{
+    margin-left: 65%;
+    font-weight: 400;
+    background-color: #ffffff;
+}
+
+.text{
+    margin-left: 5%;
+    background-color: #ffffff;
+}
+
+.main-bt{
+    margin-left: 500px;
+}
+
+.button2 {
+    background-color: #997954;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 40px;
+    box-shadow: 5px 5px 5px -5px rgba(54, 48, 48, 0.75);
+    border-radius: 1rem;
+    margin-left: 45%;
+}
+
+a{
+    background-color: transparent;
+}
+
+

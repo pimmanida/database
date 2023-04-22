@@ -78,7 +78,6 @@ html {
 
 .menu {
   position: relative;
-  display: flex;
   align-items: center;
   justify-items: center;
   padding: 3rem;
