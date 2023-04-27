@@ -3,7 +3,7 @@
         private $host="localhost";
         private $user="root";
         private $password="";
-        private $database="register_oop";
+        private $database="new_application_2";
         private $conn;
 
         function __construct(){

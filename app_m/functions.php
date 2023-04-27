@@ -3,7 +3,7 @@
     define('DB_SERVER', 'localhost'); // Your hostname
     define('DB_USER', 'root'); // Database Username
     define('DB_PASS', ''); // Database Password
-    define('DB_NAME', 'register_oop'); // Database Name
+    define('DB_NAME', 'new_application_2'); // Database Name
 
     class DB_con {
         function __construct() {
